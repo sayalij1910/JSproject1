@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h2> Project Management Tool</h2>
+    <button id="showProd">Show Products</button>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th> Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody id="prodTable"></tbody>
+    </table>
+    <h2>Product Details</h2>
+    <p>Total Stock: <span id="totalStock">0</span></p>
+    <p>Average Price: <span id="avgPrice">0</span></p>
+    <p>Highest-Priced Product: <span id="highestPrice"></span></p>
+    
+    <form id="addProductForm">
+        <h2>Add New Product</h2>
+        <input type="text" id="productName" placeholder=" Name" required>
+        <input type="number" id="productPrice" placeholder="Price" required>
+        <input type="number" id="productStock" placeholder="Stock" required>
+        <input type="text" id="productCategory" placeholder="Category" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
