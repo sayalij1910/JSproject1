@@ -12,7 +12,7 @@ document.getElementById("showProd").addEventListener("click", () => {
     products.forEach(product => {
         const row = `<tr>
                         <td>${product.name}</td>
-                        <td>${product.price}</td>
+                        <td>₹${product.price}</td>
                         <td>${product.stock}</td>
                         <td>${product.category}</td>
                     </tr>`;
@@ -26,8 +26,8 @@ function updateStatistics() {
   const highestProduct = products.reduce((max, product) => (product.price > max.price ? product : max), products[0]);
   
   document.getElementById("totalStock").innerText = totalStock;
-  document.getElementById("avgPrice").innerText = avgPrice.toFixed(2);
-  document.getElementById("highestPrice").innerText = `${highestProduct.name} (${highestProduct.category}) - $${highestProduct.price}`;
+  document.getElementById("avgPrice").innerText = `₹${avgPrice.toFixed(2)}`;
+  document.getElementById("highestPrice").innerText = `${highestProduct.name} (${highestProduct.category}) - ₹${highestProduct.price}`;
 }
 function myFunction() {
 

@@ -9,7 +9,8 @@
 <body>
     <h2> Project Management Tool</h2>
     <button id="showProd">Show Products</button>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" >
+
 
     <table id="myTable">
         <thead>
@@ -23,9 +24,18 @@
         <tbody id="prodTable"></tbody>
     </table>
     <h2>Product Details</h2>
-    <p>Total Stock: <span id="totalStock">0</span></p>
-    <p>Average Price: <span id="avgPrice">0</span></p>
-    <p>Highest-Priced Product: <span id="highestPrice"></span></p>
+ 
+    <div class="statistics-container">
+        <div class="stat-item">
+            <strong>Total Stock:</strong> <span id="totalStock">0</span>
+        </div>
+        <div class="stat-item">
+            <strong>Average Price:</strong> <span id="avgPrice">0</span>
+        </div>
+        <div class="stat-item">
+            <strong>Highest-Priced Product:</strong> <span id="highestPrice">NA</span>
+        </div>
+    </div>
     
     <form id="addProductForm">
         <h2>Add New Product</h2>

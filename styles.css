@@ -17,7 +17,7 @@ body{
     background-color:#4CAF50;
 }
 #myInput {
-    background-image: url("Assignment1/searchbar.png");
+    background-image: url("..Assignment1/searchbar.png"); 
     background-position: 10px 10px;
     background-repeat: no-repeat;
     width: 60%;
@@ -81,4 +81,28 @@ form button {
 
 form button:hover {
     background-color: #4CAF50;
+}
+
+.statistics-container {
+    width: 350px;  
+    /* height: 200px; */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 50px auto;  /* Centering horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 0px;
+}
+
+.stat-item {
+    background: #f8f8f8;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
